@@ -8,7 +8,7 @@ require("dotenv").config();
 
 async function main() {
 
-    console.log("2.2 maker for iOS - https://dimisaio.be\n");
+    console.log("2.207 maker for iOS - https://agdps.de/");
 
     if (!fs.existsSync("base.ipa")) {
         await dl("https://filebin.net/s776pebepds9wyco/base.ipa", 'base.ipa');
@@ -59,7 +59,7 @@ async function main() {
     
     await fs.promises.rm(dir, { recursive: true, force: true });
 
-    console.log("Done! Project by DimisAIO.be :)")
+    console.log("Done! Project by DimisAIO.be / Updated by LenoxAPI")
 }
 
 main(); // ok
