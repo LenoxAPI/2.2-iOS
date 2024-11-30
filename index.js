@@ -11,7 +11,7 @@ async function main() {
     console.log("2.2 maker for iOS - https://dimisaio.be\n");
 
     if (!fs.existsSync("base.ipa")) {
-        await dl("https://us-east-1.tixte.net/uploads/files.141412.xyz/base.ipa", 'base.ipa');
+        await dl("https://filebin.net/s776pebepds9wyco/base.ipa", 'base.ipa');
     }
 
     var name = process.env.name ? process.env.name : prompt("Enter GDPS name: ");
