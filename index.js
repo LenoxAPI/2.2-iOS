@@ -46,7 +46,7 @@ async function main() {
     await fs.promises.rename(`${path}/GeometryJump`, `${path}/${name}`);
     
     var plist = await fs.promises.readFile(`${path}/Info.plist`, 'utf8');
-    plist = plist.replaceAll("com.robtop.geometryjump", bundle).replaceAll("GeometryJump", name).replaceAll("Geometry", name);
+    plist = plist.replaceAll("com.robtop.geometryjump", bundle).replaceAll("GeometryJump", name).replaceAll("Geometry", name).replaceAll("iPod9,1", "iPhone12,3");
     await fs.promises.writeFile(`${path}/Info.plist`, plist, 'utf8');
     
     var gd = await fs.promises.readFile(`${path}/${name}`, 'binary');
